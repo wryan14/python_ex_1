@@ -4,7 +4,6 @@ May 25, 2020
 
 - This set of exercises uses topics from refreshers 1 and 2: basic data types and flow control
 - But, you're free to use other python concepts (functions, OOP) as well
-- These are NOT ordered by difficulty, please read them ALL before you start!
 - My solution is directly below, but with a visual buffer so you don't see it accidentally.
 
 You should have gotten this file by forking the python_ex_1 project from my github
