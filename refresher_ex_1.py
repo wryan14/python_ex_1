@@ -25,8 +25,8 @@
 # Task: get the user's name with input() and print out Hello <name>
 print("start of part 0") # set breakpoint here
 # your code here
-
-
+answer = input('What is your name?  ')
+print('Hello, ', answer)
 print("end of 0") # set breakpoint here 
 '''
 
@@ -102,8 +102,9 @@ print("start of part 1") # set breakpoint here
 L = [0, [], [1,2,3,4], [[5],[6,7]], [8,9,10]]
 print(L)
 # your code
-
-
+# Using star to unpack list at index 2 but a straight indexing approach at index 3
+X = [ L[0], *L[2][1:3], [L[3][0][0], L[3][1][0]], L[-1][0], L[-1][-1]]
+print(X)
 print("end of 1") # set breakpoint here 
 '''
 
@@ -285,7 +286,7 @@ filler = "..."
 
 
 print("end of 4") # set breakpoint here 
-'''
+"""
 
 
 
@@ -354,4 +355,4 @@ print(abbr("test", "", 0))
 print(abbr("test", "", 999))
 print(abbr("A very long description", "....................................", 999))
 print(abbr("A very long description", "....................................", 0))
-'''
+"""
