@@ -155,14 +155,14 @@ print(newL) # [0, 2, 3, [5, 6], 8, 10]
 print("start of part 2") # set breakpoint here
 s = "Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace. Its language constructs and object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects."
 # your code here
-
 s_li = s.split('.') # breaking s into list using '.' as a delimiter
-s_count = len(s_li) # use len to find number of sentences
+
+# reporting number of sentences by finding length of s_li
+print(f'There are {len(s_li)} sentences: ')
 
 # displaying sentences with a for-loop
-print(f'There are {s_count} sentences: ')
 for sent in s_li:
-    print(sent.strip())
+    print(sent.strip()) 
 
 print("end of 2") # set breakpoint here 
 '''
