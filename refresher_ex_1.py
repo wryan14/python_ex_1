@@ -215,6 +215,12 @@ for e in sentence_list:
 print("start of part 3") # set breakpoint here
 # your code here
 
+# using a list comprehension to uppercase every other word in the list
+# using enumerate provides us with a list of tuples that have the word and index position
+print('result: ')
+for word in [w[1].strip() if w[0]%2==0 else w[1].upper().strip() for w in enumerate(s.split())]:
+    print(word.replace('.', '').replace(',', ''))
+
 
 print("end of 3") # set breakpoint here 
 '''
