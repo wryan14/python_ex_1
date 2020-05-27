@@ -297,7 +297,27 @@ print("start of part 4") # set breakpoint here
 s = "A very long description" # a long string
 filler = "..."
 # your code here
+def abbr(s, filler="...", total_width=15):
+    '''Reduce string to a desired width keeping the first and last characters'''
+    # odd width will round the first part up and the last part down
+    ind1 = round(total_width/2)
+    ind2 = int(total_width/2)*-1 # negative 1 so we can slice from the end
+    return filler.join([''.join(list(s)[0:ind1]), ''.join(list(s)[ind2:])])
 
+print(abbr(s, filler="...", total_width=7))
+print(abbr(s, filler="---", total_width=12))
+print(abbr(s, filler="$$$", total_width=15))    
+
+print(abbr("", "...", 0))
+print(abbr("", "...", 999))
+print(abbr("", "", 0))
+print(abbr("", "", 999))
+print(abbr("test", "...", 0))
+print(abbr("test", "...", 999))
+print(abbr("test", "", 0))
+print(abbr("test", "", 999))
+print(abbr("A very long description", "....................................", 999))
+print(abbr("A very long description", "....................................", 0))
 
 print("end of 4") # set breakpoint here 
 """
